@@ -43,7 +43,7 @@
                             </th>
                             <td class="px-6 py-4">
                                 <span wire:click="editarPerfil({{ $item->id }})" @class([
-                                    'border-2 border-gray-300 w-3/4 inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-semibold cursor-pointer',
+                                    '    w-3/4 inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-semibold cursor-pointer',
                                     'bg-green-50 text-green-600' => $item->publicada == 'SI',
                                     'bg-red-50 text-red-600' => $item->publicada == 'NO',
                                 ])>

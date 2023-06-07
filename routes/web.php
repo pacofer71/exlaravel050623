@@ -33,5 +33,5 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('dashboard', VerUserFotos::class)->name('dashboard');
-    Route::get('dashboard/{foto}/edit', [FotoController::class, 'detalle'])->name('foto.detalle');
+    Route::get('dashboard/{foto}', [FotoController::class, 'detalle'])->name('foto.detalle');
 });
